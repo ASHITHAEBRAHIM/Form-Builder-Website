@@ -1,7 +1,7 @@
 import { Button } from '@/components/ui/button'
-import { Input } from "@/components/ui/input"
 import Image from 'next/image'
 import Navbar from './Navbar'
+import Signin from './Signin'
 
 export default function Home() {
   return (
@@ -12,8 +12,8 @@ export default function Home() {
         <h1 className='text-4xl font-bold text-center mt-7'>Create Custom FORMS with our <br /> easy to use form builder</h1>
         <p className='mt-7'>Get started by creating an account for FREE!</p>
         <div className='flex flex-col md:flex-row items-center gap-4 mt-7'>
-          <Input className='h-6' type="email" placeholder="Enter Email Address" />
-          <Button className='bg-blue-900 text-white' size='sm'>Get Started</Button>
+        <Signin/>
+        <Button className='bg-blue-900 text-white'>Get Started</Button>
         </div>
       </div>
       </>
